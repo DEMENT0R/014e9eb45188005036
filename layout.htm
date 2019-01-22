@@ -1,0 +1,70 @@
+<%=GetHead()%>
+<body id="<%=Page.PageSetID%>">
+<body class="page_bg">
+<table width="100%" height="100%"  border="0" cellspacing="1" cellpadding="1" align="center">  
+		<tr>
+<% 'begin heading area %>
+	<!-- #include file="../ops/inc_banner.asp" -->
+<% 'end heading area %>
+	</tr>
+	<tr>
+		<td>
+<% 'begin Text area %>
+<br>
+<table width="100%" height="90%"  align="center">
+<tr>
+
+
+
+<td width="8px"></td>
+
+<% 'begin middle contents table  %>
+<td valign="top">
+			<table class="maincontenttable"  border="5" cellspacing="4" cellpadding="2">
+						<tr><td>
+						<!-- google_ad_section_start -->										
+			<table WIDTH="100%" height="100%" border="0" cellspacing="15" cellpadding="1"> 
+							<td valign="top">
+ <%=GetMenuBar%>
+							<div id="wrapper">
+				<div id="contentw"><%=GetContent()%></div>
+							</div>
+				<div id="sidebarw"><div id="sidebar"><%=GetSideBar()%></div></div>
+				<div id="extraw"><div id="extra"><%=GetExtraContent()%></div></div>
+  <%=GetMenuBar%> 
+ <div class="stretch"></div>
+							<BR>
+							</td>
+						</table>
+						<!-- google_ad_section_end -->
+						</td> </tr>
+			</table>	
+</td>
+
+<td width="8px"></td>
+
+<% 'begin Left links column %>
+<!-- #include file="../ops/menu.asp" -->
+<% 'end Left links column %>
+
+	</td>	
+</tr>
+</table>
+   	
+<% 'end Text area   %>
+	
+		</td>	
+	</tr>
+
+	<tr>
+		<td>
+
+<% 'begin footer table  %>
+		<!-- #include file="../ops/footer.asp" -->
+<% 'end footer table  %>
+	
+		</td>  
+	</tr>
+</table>
+</body>
+</html>
